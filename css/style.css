@@ -26,11 +26,11 @@ body{
 }
 
 .done{
-    background-color: green;
+    background-color: rgb(106, 194, 106);
 }
 
 .to-do{
-    background-color: red;
+    background-color: rgb(237, 66, 66);
 }
 
 .text-undone{
