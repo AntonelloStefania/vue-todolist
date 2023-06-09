@@ -37,6 +37,10 @@ createApp({
         taskDone(index){
          this.tasks[index].done = !this.tasks[index].done;  
           console.log(this.tasks[index].done)
+        },
+
+        deleteTask(index){
+            this.tasks.splice(index, 1)
         }
     },
 }).mount('#app')

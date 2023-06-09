@@ -20,7 +20,7 @@
                             <div>
                                 <button class="btn btn-success me-3" @click="taskDone(index)" :class="tasks[index].done ? 'done' : 'to-do'" ><i :class="tasks[index].done ? 'fas fa-check' : 'fas fa-x'"></i></button>
                                 <button class="me-3">edit</button>
-                                <button>delete</button>
+                                <button @click="deleteTask(index)">delete</button>
                             </div>
                         </li>
                     </ul>
