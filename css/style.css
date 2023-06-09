@@ -9,8 +9,21 @@ body{
 }
 
 .tasks-sheet{
-    background-color: white;
-    height: 700px;
+    background-color: rgb(248, 234, 220);
+    border: 2px solid black;
+    box-shadow: 0 0 20px black;
+    
+}
+
+.task-container{
+    height: 100vh;
+}
+
+.task-row{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* done button */
