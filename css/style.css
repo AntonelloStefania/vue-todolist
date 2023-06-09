@@ -12,6 +12,7 @@ body{
     background-color: rgb(248, 234, 220);
     border: 2px solid black;
     box-shadow: 0 0 20px black;
+    min-width: 550px;
 }   
 
 .task-container{
