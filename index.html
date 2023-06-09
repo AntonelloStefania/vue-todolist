@@ -15,10 +15,10 @@
                 <div class="col-10 tasks-sheet d-flex justify-content-between flex-column">
                     <h2 class="text-center pt-3 fw-bold">Cose da fare</h2>  
                     <ul>
-                        <li class="d-flex justify-content-between mx-5 mt-4 border-bottom" v-for="(task,index) in tasks">
+                        <li class="d-flex justify-content-between mx-5 mt-4 border-bottom col" v-for="(task,index) in tasks">
                             <input v-if="tasks[index].editTask" type="text" v-model="task.text" @keyup.enter="editTaskFunction(index)">
-                            <span v-else class="text-uppercase" :class="tasks[index].done ? 'text-done' : 'text-undone '" @dblclick="editTaskFunction(index)">{{tasks[index].text}}</span>
-                            <div>
+                            <span v-else class="text-uppercase text-box" :class="tasks[index].done ? 'text-done' : 'text-undone '" @dblclick="editTaskFunction(index)">{{tasks[index].text}}</span>
+                            <div class="col-auto">
                                 <button class="btn btn-outline-dark btn-success me-3" @click="taskDone(index)" :class="tasks[index].done ? 'done' : 'to-do'" ><i :class="tasks[index].done ? 'fas fa-check' : 'fas fa-x'"></i></button>
                                 <button class="me-3 
                                 fas fa-marker btn btn-light btn-outline-dark" @click="editTaskFunction(index)"></button>
