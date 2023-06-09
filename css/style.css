@@ -37,13 +37,11 @@ body{
     text-decoration: underline;
     font-weight: bold;
     word-wrap: break-word;
-    white-space: normal;
 }
 
 .text-done{
     text-decoration: line-through;
     word-wrap: break-word;
-    white-space: normal;
 }
 
 
