@@ -13,3 +13,11 @@
     4.2.2- :ALTRIMENTI aggiungo classi per il done;
 
 5- collego il cambio di classi dovuto al pulsante done con le classi del testo della lista;
+
+6- creo funzione per cancellare elementi dalla lista (al click del pulsante avviene lo splice dell'elemento i  nell'array)
+    6.1- collego il pulsante delete alla funzione;
+
+7- creo funzione per aggiungere un elemento all'array;
+    7.1- dichiaro una variabile vuota nella quale far rientrare (con v-model) l'input dell'utente;
+    7.2- creo una funzione che mi genera l'oggetto con il contenuto dell'input;
+    7.3- pusho l'oggetto nell'array iniziale e svuoto il campo input;
