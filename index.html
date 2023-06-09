@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>vue-todolist</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div id="app">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-10 m-auto tasks-sheet">
+                    <h2>lista di cose da fare</h2>
+                    <ul>
+                        <li class="d-flex justify-content-between mx-5 mt-4" v-for="(task,index) in tasks">
+                            <span>{{tasks[index].text}}</span>
+                            <div>
+                                <button @click="taskDone(index)" :class="tasks[index].done ? 'done' : 'to-do'" >done</button>
+                                <button>edit</button>
+                                <button>delete</button>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="tasks-bottom-section">
+                        <input type="text">
+                        <button>add</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<script src="./script/script.js"></script>
+</html>
