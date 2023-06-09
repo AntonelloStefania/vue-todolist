@@ -9,7 +9,7 @@ body{
 }
 
 .tasks-sheet{
-    background-color: aqua;
+    background-color: white;
     height: 700px;
 }
 
@@ -22,3 +22,13 @@ body{
 .to-do{
     background-color: red;
 }
+
+.text-undone{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.text-done{
+    text-decoration: line-through;
+}
+

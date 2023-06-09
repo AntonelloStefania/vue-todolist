@@ -10,4 +10,6 @@
     4.1- attribuisco il valore false a done e creo una funzione toggle;
     4.2- al click del pulsante il valore diventa l'opposto di sé stesso;
     4.2.1- ?SE il valore è false aggiungo classi per l'undone;
-    4.2.2- :ALTRIMENTI aggiungo classi per il done
+    4.2.2- :ALTRIMENTI aggiungo classi per il done;
+
+5- collego il cambio di classi dovuto al pulsante done con le classi del testo della lista;
